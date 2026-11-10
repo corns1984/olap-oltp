@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analytics-app"
+version = "1.0.0"
+description = "Simple analytics application"
+requires-python = ">=3.10"
+
+dependencies = [
+  
+  "pytest>=7.0.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
